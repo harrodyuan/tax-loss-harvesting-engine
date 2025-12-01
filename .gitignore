@@ -4,6 +4,5 @@ __pycache__/
 .env
 venv/
 env/
-*.csv
-*.png
-
+# *.csv # Commented out to allow CSVs (data/results)
+# *.png # Commented out to allow PNGs (plots)
