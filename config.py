@@ -1,0 +1,10 @@
+import datetime
+
+START_DATE = datetime.date(2014, 1, 1)
+END_DATE = datetime.date(2024, 1, 1)
+TAX_RATE = 0.20
+INITIAL_CASH = 10_000_000.0
+TOP_N_STOCKS = 50
+WASH_SALE_DAYS = 30
+HARVEST_THRESHOLD = -0.05
+
