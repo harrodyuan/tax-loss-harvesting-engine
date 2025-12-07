@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  7 DEC 2025 12:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  7 DEC 2025 12:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**writeup.tex
-(./writeup.tex
+**results/latex_source/writeup.tex
+(./results/latex_source/writeup.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/base/article.cls
@@ -324,7 +324,7 @@ ef
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count302
 \l__pdf_internal_box=\box57
-) (./writeup.aux)
+) (results/latex_source/writeup.aux)
 \openout1 = `writeup.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
@@ -405,7 +405,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package hyperref Info: Link coloring OFF on input line 31.
- (./writeup.out) (./writeup.out)
+ (results/latex_source/writeup.out) (results/latex_source/writeup.out)
 \@outlinefile=\write3
 \openout3 = `writeup.out'.
 
@@ -424,7 +424,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
                                                   \__shipout_drop_firstpage_...
 l.119     \item \textbf
                        {Baseline Final Wealth:} \$75,963,882]
-<../../images/wealth_curves_wealth_over_time_-_income_withdrawal.png, id=72, 86
+<../../images/wealth_curves_wealth_over_time_-_income_withdrawal.png, id=91, 86
 7.24pt x 433.62pt>
 File: ../../images/wealth_curves_wealth_over_time_-_income_withdrawal.png Graph
 ic file (type png)
@@ -432,7 +432,7 @@ ic file (type png)
 Package pdftex.def Info: ../../images/wealth_curves_wealth_over_time_-_income_w
 ithdrawal.png  used on input line 128.
 (pdftex.def)             Requested size: 407.66833pt x 203.8345pt.
-<../../images/drawdowns_drawdowns_-_income_withdrawal.png, id=74, 867.24pt x 43
+<../../images/drawdowns_drawdowns_-_income_withdrawal.png, id=93, 867.24pt x 43
 3.62pt>
 File: ../../images/drawdowns_drawdowns_-_income_withdrawal.png Graphic file (ty
 pe png)
@@ -448,14 +448,15 @@ s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.139 
-       <./../../images/wealth_curves_wealth_over_time_-_income_withdrawal.png>]
-<../../images/comparison_cagr.png, id=82, 722.7pt x 433.62pt>
+       <results/latex_source/../../images/wealth_curves_wealth_over_time_-_inco
+me_withdrawal.png>]
+<../../images/comparison_cagr.png, id=100, 722.7pt x 433.62pt>
 File: ../../images/comparison_cagr.png Graphic file (type png)
 <use ../../images/comparison_cagr.png>
 Package pdftex.def Info: ../../images/comparison_cagr.png  used on input line 1
 42.
 (pdftex.def)             Requested size: 407.66833pt x 244.59877pt.
-<../../images/comparison_net_tax_impact.png, id=83, 722.7pt x 433.62pt>
+<../../images/comparison_net_tax_impact.png, id=101, 722.7pt x 433.62pt>
 File: ../../images/comparison_net_tax_impact.png Graphic file (type png)
 <use ../../images/comparison_net_tax_impact.png>
 Package pdftex.def Info: ../../images/comparison_net_tax_impact.png  used on in
@@ -475,8 +476,8 @@ s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.153 
-       <./../../images/drawdowns_drawdowns_-_income_withdrawal.png> <./../../im
-ages/comparison_cagr.png>]
+       <results/latex_source/../../images/drawdowns_drawdowns_-_income_withdraw
+al.png> <results/latex_source/../../images/comparison_cagr.png>]
 Overfull \hbox (3.08269pt too wide) in paragraph at lines 166--167
 []\OT1/cmr/bx/n/12 Transaction Costs: \OT1/cmr/m/n/12 We as-sumed zero trans-ac
 -tion costs, which fa-vors high-turnover
@@ -491,34 +492,24 @@ s been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.172     \item C
                  haudhuri, S., Burnham, T., \& Lo, A. (2020). \textit{An Emp...
- <./../../images/comparison_net_tax_impact.png>]
+ <results/latex_source/../../images/comparison_net_tax_impact.png>]
 
-[7] (./writeup.aux)
+[7] (results/latex_source/writeup.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `writeup.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `writeup.out':
-(rerunfilecheck)             Before: 4E26C3C655741DEE4FDCC6B66F4BB7F7;1811
-(rerunfilecheck)             After:  FD37A679BDFA78BF731471097FF7B32C;2405.
+Package rerunfilecheck Info: File `writeup.out' has not changed.
+(rerunfilecheck)             Checksum: FD37A679BDFA78BF731471097FF7B32C;2405.
  ) 
 Here is how much of TeX's memory you used:
- 10183 strings out of 474662
- 157871 string characters out of 5751110
- 566935 words of memory out of 5000000
- 33073 multiletter control sequences out of 15000+600000
+ 10189 strings out of 474662
+ 158182 string characters out of 5751110
+ 567164 words of memory out of 5000000
+ 33078 multiletter control sequences out of 15000+600000
  566927 words of font info for 64 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 75i,8n,79p,641b,530s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,79p,662b,530s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/harold/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/jknappen/
 ec/tcbx1200.600pk> </Users/harold/Library/texlive/2025basic/texmf-var/fonts/pk/
 ljfour/jknappen/ec/tcrm1200.600pk></usr/local/texlive/2025basic/texmf-dist/font
@@ -535,10 +526,10 @@ ve/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local
 ocal/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
 sr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
 >
-Output written on ./writeup.pdf (7 pages, 510847 bytes).
+Output written on results/latex_source/writeup.pdf (7 pages, 510906 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
- 139 compressed objects within 2 object streams
+ 200 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
  38 named destinations out of 1000 (max. 500000)
- 85 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 125 words of extra memory for PDF output out of 10000 (max. 10000000)
 
