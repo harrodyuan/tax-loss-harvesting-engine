@@ -107,13 +107,37 @@ We also tested a ``Charitable Giving'' scenario where the investor contributes \
     \item \textbf{Conclusion:} The combination of tax-free donation and tax-loss harvesting (in the ideal case) creates significant wealth compounding.
 \end{itemize}
 
-\section{Discussion}
+\section{Visualizations}
 
-Across all scenarios, the results consistently demonstrate that incorporating tax awareness into portfolio rebalancing meaningfully impacts after-tax performance. In the ideal scenario without wash-sale constraints, the greedy tax-loss harvesting strategy dominated all other approaches. This outcome is economically intuitive: by immediately realizing losses while maintaining full market exposure, the strategy systematically converts volatility into tax credits that compound over time.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{wealth_curves_wealth_over_time_-_income_withdrawal.png}
+    \caption{Wealth Accumulation over 10 Years (Income Scenario)}
+    \label{fig:wealth}
+\end{figure}
 
-However, the wash-sale constrained strategy exhibited lower terminal wealth due to forced temporary deviations from the market (Cash Drag). The tax-aware optimization strategy also struggled to outperform the baseline because the universe (50 stocks) was too small to find perfect substitutes for harvested assets, leading to tracking error that was not compensated by the tax benefits.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{drawdowns_drawdowns_-_income_withdrawal.png}
+    \caption{Drawdown Analysis}
+    \label{fig:drawdowns}
+\end{figure}
 
-\section{Limitations}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{comparison_cagr.png}
+    \caption{Comparison of Compound Annual Growth Rate (CAGR)}
+    \label{fig:cagr}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{comparison_net_tax_impact.png}
+    \caption{Net Tax Impact (Tax Savings - Tax Paid)}
+    \label{fig:nettax}
+\end{figure}
+
+\section{Conclusion}
 
 We made several simplifying assumptions:
 \begin{enumerate}

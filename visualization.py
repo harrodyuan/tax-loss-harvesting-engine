@@ -52,11 +52,14 @@ def plot_drawdowns(results_history: Dict[str, pd.Series], title: str = "Portfoli
 
 def plot_metrics_comparison(df_results: pd.DataFrame):
     """
-    Bar charts for Final Wealth, Total Taxes, Realized Losses.
+    Bar charts for Final Wealth, Total Taxes, Realized Losses, CAGR, and Net Tax Impact.
     """
-    metrics = ["Final Wealth", "Total Taxes Paid", "Total Realized Losses", "Tracking Error"]
+    metrics = ["Final Wealth", "Total Taxes Paid", "Total Realized Losses", "Tracking Error", "CAGR", "Net Tax Impact"]
     
     for metric in metrics:
+        if metric not in df_results.columns:
+            continue
+            
         plt.figure(figsize=(10, 6))
         sns.barplot(data=df_results, x="Strategy", y=metric, hue="Scenario")
         plt.title(f"{metric} Comparison")
@@ -67,4 +70,19 @@ def plot_metrics_comparison(df_results: pd.DataFrame):
         plt.savefig(filename)
         print(f"Saved plot to {filename}")
         plt.close()
+
+def plot_tax_efficiency(df_results: pd.DataFrame):
+    """
+    Scatter plot of Tracking Error vs. Net Tax Impact to visualize the efficiency frontier.
+    """
+    plt.figure(figsize=(10, 6))
+    sns.scatterplot(data=df_results, x="Tracking Error", y="Net Tax Impact", hue="Strategy", style="Scenario", s=100)
+    plt.title("Tax Efficiency Frontier: Tracking Error vs. Tax Impact")
+    plt.grid(True, which='both', linestyle='--', linewidth=0.5)
+    plt.tight_layout()
+    
+    filename = "tax_efficiency_frontier.png"
+    plt.savefig(filename)
+    print(f"Saved plot to {filename}")
+    plt.close()
 

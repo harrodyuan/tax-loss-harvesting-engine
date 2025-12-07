@@ -5,6 +5,8 @@ from scenarios import apply_income_withdrawal, apply_charitable_giving
 import visualization
 import matplotlib.pyplot as plt
 
+from config import INITIAL_CASH
+
 def main():
     print("Starting Tax-Loss Harvesting Backtesting Engine...")
     
@@ -52,9 +54,26 @@ def main():
             hist_series = metrics.pop("History")
             history[scen_name][strat_name] = hist_series
             
+            # Calculate CAGR
+            years = 10
+            final_val = metrics['Final Wealth']
+            cagr = (final_val / INITIAL_CASH) ** (1/years) - 1
+            
+            # Calculate Net Tax Impact (Tax Paid - Tax Credits?)
+            # Or simply Tax Paid vs Tax Savings. 
+            # Group 7 defines Net Tax Impact likely as value added from tax strategy.
+            # For simplicity, we'll define it as: (Final Wealth - Baseline Final Wealth) / Initial Cash
+            # But to be precise, let's stick to the metrics we have: Total Taxes Paid.
+            # We will add a computed field "Net Tax Impact" as (Tax Savings from Losses - Taxes Paid).
+            # Tax Savings = Realized Losses * 0.20
+            tax_savings = metrics['Total Realized Losses'] * 0.20
+            net_tax_impact = tax_savings - metrics['Total Taxes Paid']
+
             res = {
                 "Strategy": strat_name,
                 "Scenario": scen_name,
+                "CAGR": cagr,
+                "Net Tax Impact": net_tax_impact,
                 **metrics
             }
             results.append(res)
@@ -67,7 +86,7 @@ def main():
     
     df_results = pd.DataFrame(results)
     # Reorder columns
-    cols = ["Strategy", "Scenario", "Final Wealth", "Total Taxes Paid", "Total Realized Losses", "Tracking Error"]
+    cols = ["Strategy", "Scenario", "Final Wealth", "CAGR", "Net Tax Impact", "Total Taxes Paid", "Total Realized Losses", "Tracking Error"]
     df_results = df_results[cols]
     
     # Format
@@ -88,6 +107,7 @@ def main():
 
     # Plot Comparison Metrics
     visualization.plot_metrics_comparison(df_results)
+    visualization.plot_tax_efficiency(df_results)
 
 if __name__ == "__main__":
     main()
