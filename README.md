@@ -13,7 +13,7 @@
 
 # Tax is All You Need
 
-> **"In a strong bull market, Cash Drag is the killer."**
+> **"In a bull market, being out of the market (Cash Drag) hurts you more than taxes help you. Unless you cheat (No Wash), it's hard to beat the Baseline.**
 
 This project simulates and evaluates the performance of **Tax-Loss Harvesting (TLH)** strategies on a Direct Indexing portfolio tracking the S&P 500 (Top 50 constituents) over the last 20 years (2004-2024).
 
