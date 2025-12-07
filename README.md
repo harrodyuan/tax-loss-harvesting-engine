@@ -15,14 +15,14 @@
 
 > **"In a bull market, being out of the market (Cash Drag) hurts you more than taxes help you. Unless you cheat (No Wash), it's hard to beat the Baseline.**
 
-This project simulates and evaluates the performance of **Tax-Loss Harvesting (TLH)** strategies on a Direct Indexing portfolio tracking the S&P 500 (Top 50 constituents) over the last 20 years (2004-2024).
+This project simulates and evaluates the performance of **Tax-Loss Harvesting (TLH)** strategies on a Direct Indexing portfolio tracking the S&P 500 (Top 50 constituents) over the last 10 years (2014-2024).
 
-##  Key Findings (2004-2024)
+##  Key Findings (2014-2024)
 
 ![Wealth Curve](images/wealth_curves_wealth_over_time_-_income_withdrawal.png)
 
 1.  **"No Wash" Strategy Wins**: The theoretical best performer was the **Greedy (No Wash)** strategy (**$28.2M** vs $25.9M Baseline). By ignoring the 30-day lockout period, it captured tax credits without missing out on market rebounds ("Cash Drag").
-2.  **Cash Drag Hurts**: Strategies that strictly obeyed wash sale rules (Greedy With Wash, Optimized) **underperformed** the simple Buy & Hold baseline (**$25.0M** vs $25.9M). In a strong bull market like 2004-2024, the opportunity cost of sitting in cash for 30 days outweighed the tax benefits of harvesting.
+2.  **Cash Drag Hurts**: Strategies that strictly obeyed wash sale rules (Greedy With Wash, Optimized) **underperformed** the simple Buy & Hold baseline (**$25.0M** vs $25.9M). In a strong bull market like 2014-2024, the opportunity cost of sitting in cash for 30 days outweighed the tax benefits of harvesting.
 3.  **Charity is Powerful**: The "Charitable Giving" scenario (annual contribution + terminal donation) resulted in the highest final wealth (**$83.3M**) because it avoids the massive liquidation tax at the end of the investment horizon.
 
 ##  Terminal Demo
