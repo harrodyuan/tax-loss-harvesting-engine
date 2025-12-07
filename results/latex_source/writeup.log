@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  7 DEC 2025 12:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  7 DEC 2025 12:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -327,24 +327,24 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 ) (./writeup.aux)
 \openout1 = `writeup.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -404,7 +404,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 22.
+Package hyperref Info: Link coloring OFF on input line 31.
  (./writeup.out) (./writeup.out)
 \@outlinefile=\write3
 \openout3 = `writeup.out'.
@@ -422,23 +422,23 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.110     \item \textbf
+l.119     \item \textbf
                        {Baseline Final Wealth:} \$75,963,882]
-<images/wealth_curves_wealth_over_time_-_income_withdrawal.png, id=71, 867.24pt
- x 433.62pt>
-File: images/wealth_curves_wealth_over_time_-_income_withdrawal.png Graphic fil
-e (type png)
-<use images/wealth_curves_wealth_over_time_-_income_withdrawal.png>
-Package pdftex.def Info: images/wealth_curves_wealth_over_time_-_income_withdra
-wal.png  used on input line 119.
+<../../images/wealth_curves_wealth_over_time_-_income_withdrawal.png, id=72, 86
+7.24pt x 433.62pt>
+File: ../../images/wealth_curves_wealth_over_time_-_income_withdrawal.png Graph
+ic file (type png)
+<use ../../images/wealth_curves_wealth_over_time_-_income_withdrawal.png>
+Package pdftex.def Info: ../../images/wealth_curves_wealth_over_time_-_income_w
+ithdrawal.png  used on input line 128.
 (pdftex.def)             Requested size: 407.66833pt x 203.8345pt.
-<images/drawdowns_drawdowns_-_income_withdrawal.png, id=73, 867.24pt x 433.62pt
->
-File: images/drawdowns_drawdowns_-_income_withdrawal.png Graphic file (type png
-)
-<use images/drawdowns_drawdowns_-_income_withdrawal.png>
-Package pdftex.def Info: images/drawdowns_drawdowns_-_income_withdrawal.png  us
-ed on input line 126.
+<../../images/drawdowns_drawdowns_-_income_withdrawal.png, id=74, 867.24pt x 43
+3.62pt>
+File: ../../images/drawdowns_drawdowns_-_income_withdrawal.png Graphic file (ty
+pe png)
+<use ../../images/drawdowns_drawdowns_-_income_withdrawal.png>
+Package pdftex.def Info: ../../images/drawdowns_drawdowns_-_income_withdrawal.p
+ng  used on input line 135.
 (pdftex.def)             Requested size: 407.66833pt x 203.8345pt.
 
 
@@ -447,18 +447,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.130 
-       <./images/wealth_curves_wealth_over_time_-_income_withdrawal.png>]
-<images/comparison_cagr.png, id=81, 722.7pt x 433.62pt>
-File: images/comparison_cagr.png Graphic file (type png)
-<use images/comparison_cagr.png>
-Package pdftex.def Info: images/comparison_cagr.png  used on input line 133.
+l.139 
+       <./../../images/wealth_curves_wealth_over_time_-_income_withdrawal.png>]
+<../../images/comparison_cagr.png, id=82, 722.7pt x 433.62pt>
+File: ../../images/comparison_cagr.png Graphic file (type png)
+<use ../../images/comparison_cagr.png>
+Package pdftex.def Info: ../../images/comparison_cagr.png  used on input line 1
+42.
 (pdftex.def)             Requested size: 407.66833pt x 244.59877pt.
-<images/comparison_net_tax_impact.png, id=82, 722.7pt x 433.62pt>
-File: images/comparison_net_tax_impact.png Graphic file (type png)
-<use images/comparison_net_tax_impact.png>
-Package pdftex.def Info: images/comparison_net_tax_impact.png  used on input li
-ne 140.
+<../../images/comparison_net_tax_impact.png, id=83, 722.7pt x 433.62pt>
+File: ../../images/comparison_net_tax_impact.png Graphic file (type png)
+<use ../../images/comparison_net_tax_impact.png>
+Package pdftex.def Info: ../../images/comparison_net_tax_impact.png  used on in
+put line 149.
 (pdftex.def)             Requested size: 407.66833pt x 244.59877pt.
 
 
@@ -467,16 +468,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.144 
+l.153 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.144 
-       <./images/drawdowns_drawdowns_-_income_withdrawal.png> <./images/compari
-son_cagr.png>]
-Overfull \hbox (3.08269pt too wide) in paragraph at lines 157--158
+l.153 
+       <./../../images/drawdowns_drawdowns_-_income_withdrawal.png> <./../../im
+ages/comparison_cagr.png>]
+Overfull \hbox (3.08269pt too wide) in paragraph at lines 166--167
 []\OT1/cmr/bx/n/12 Transaction Costs: \OT1/cmr/m/n/12 We as-sumed zero trans-ac
 -tion costs, which fa-vors high-turnover
  []
@@ -488,9 +489,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.163     \item C
+l.172     \item C
                  haudhuri, S., Burnham, T., \& Lo, A. (2020). \textit{An Emp...
- <./images/comparison_net_tax_impact.png>]
+ <./../../images/comparison_net_tax_impact.png>]
 
 [7] (./writeup.aux)
  ***********
@@ -511,11 +512,11 @@ Package rerunfilecheck Info: Checksums for `writeup.out':
 (rerunfilecheck)             After:  FD37A679BDFA78BF731471097FF7B32C;2405.
  ) 
 Here is how much of TeX's memory you used:
- 10182 strings out of 474662
- 157696 string characters out of 5751110
- 567959 words of memory out of 5000000
- 33074 multiletter control sequences out of 15000+600000
- 567239 words of font info for 65 fonts, out of 8000000 for 9000
+ 10183 strings out of 474662
+ 157871 string characters out of 5751110
+ 566935 words of memory out of 5000000
+ 33073 multiletter control sequences out of 15000+600000
+ 566927 words of font info for 64 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  75i,8n,79p,641b,530s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/harold/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/jknappen/
@@ -529,13 +530,15 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025basic
 sic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/202
 5basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
 2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texli
-ve/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
-exlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/loc
-al/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on writeup.pdf (7 pages, 496234 bytes).
+ve/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local
+/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
+ocal/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
+sr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
+>
+Output written on ./writeup.pdf (7 pages, 510847 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
- 136 compressed objects within 2 object streams
+ 185 PDF objects out of 1000 (max. 8388607)
+ 139 compressed objects within 2 object streams
  38 named destinations out of 1000 (max. 500000)
  85 words of extra memory for PDF output out of 10000 (max. 10000000)
 
