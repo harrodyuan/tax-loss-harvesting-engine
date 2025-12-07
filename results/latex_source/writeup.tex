@@ -90,9 +90,9 @@ Subject to:
 \end{equation}
 This framework minimizes tracking error relative to the benchmark while strictly adhering to wash-sale constraints (zero weight on restricted assets). Instead of holding cash, the optimizer attempts to reallocate capital to correlated substitutes within the allowable universe.
 
-\section{Empirical Results (2004-2024)}
+\section{Empirical Results (2014-2024)}
 
-The simulation covered a 20-year period including major market events like the 2008 GFC, 2020 COVID crash, and 2022 bear market. The results for the \textbf{Income Withdrawal Scenario} (5\% annual withdrawal, liquidation at Year 20) are summarized below:
+The simulation covered a 10-year period including major market events like the 2020 COVID crash and 2022 bear market. The results for the \textbf{Income Withdrawal Scenario} (5\% annual withdrawal, liquidation at Year 10) are summarized below:
 
 \begin{table}[H]
 \centering
@@ -111,10 +111,10 @@ Optimized & \$24,865,939 & \$4,970,652 & \$22,749,523 \\
 \end{table}
 
 \subsection{Analysis of Cash Drag}
-The most striking finding is the underperformance of the compliant strategies. The \textbf{Greedy (With Wash)} strategy underperformed the baseline by almost \$1M. In a rising market (over 20 years), the opportunity cost of being out of the market (Cash Drag) exceeds the 20\% value of the harvested tax credit. The ``No Wash'' strategy's outperformance confirms that the \textit{harvesting} itself is valuable, but the \textit{regulatory friction} destroys that value in this specific universe and market regime.
+The most striking finding is the underperformance of the compliant strategies. The \textbf{Greedy (With Wash)} strategy underperformed the baseline by almost \$1M. In a rising market (over 10 years), the opportunity cost of being out of the market (Cash Drag) exceeds the 20\% value of the harvested tax credit. The ``No Wash'' strategy's outperformance confirms that the \textit{harvesting} itself is valuable, but the \textit{regulatory friction} destroys that value in this specific universe and market regime.
 
 \subsection{Charitable Giving Scenario}
-We also tested a ``Charitable Giving'' scenario where the investor contributes \$1M annually and donates the portfolio at Year 20 (avoiding terminal liquidation tax).
+We also tested a ``Charitable Giving'' scenario where the investor contributes \$1M annually and donates the portfolio at Year 10 (avoiding terminal liquidation tax).
 \begin{itemize}
     \item \textbf{Baseline Final Wealth:} \$75,963,882
     \item \textbf{No Wash Final Wealth:} \$83,256,160
@@ -126,7 +126,7 @@ We also tested a ``Charitable Giving'' scenario where the investor contributes \
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{../../images/wealth_curves_wealth_over_time_-_income_withdrawal.png}
-    \caption{Wealth Accumulation over 20 Years (Income Scenario)}
+    \caption{Wealth Accumulation over 10 Years (Income Scenario)}
     \label{fig:wealth}
 \end{figure}
 
