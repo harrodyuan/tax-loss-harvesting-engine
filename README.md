@@ -1,6 +1,6 @@
 # Tax-Loss Harvesting Backtesting Engine
 
-[![View Full Project Report](https://img.shields.io/badge/View-Full_Report_PDF-blue?style=for-the-badge&logo=adobeacrobatreader)](results/writeup.pdf)
+[![View Full Project Report](https://img.shields.io/badge/View-Full_Report_PDF-blue?style=for-the-badge&logo=adobeacrobatreader)](writeup.pdf)
 
 This project simulates and evaluates the performance of **Tax-Loss Harvesting (TLH)** strategies on a Direct Indexing portfolio tracking the S&P 500 (Top 50 constituents) over the last 20 years (2004-2024).
 
