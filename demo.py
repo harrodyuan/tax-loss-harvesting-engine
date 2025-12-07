@@ -1,11 +1,16 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
+import sys
+import os
+
+# Add src to path to import modules
+sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
+
 from data_loader import get_sp500_tickers, download_data
 from strategies import BacktestEngine
-from scenarios import apply_income_withdrawal, apply_charitable_giving
-import os
-from config import IMAGE_DIR
+from scenarios import apply_income_withdrawal
+from config import IMAGE_DIR, DATA_DIR
 
 def show_image(title, filename):
     """Helper to display an image in the demo flow."""
@@ -26,7 +31,7 @@ def show_image(title, filename):
 
 def main():
     print("===================================================")
-    print("   TAX-LOSS HARVESTING PROJECT DEMO")
+    print("   TAX IS ALL YOU NEED: PROJECT DEMO")
     print("===================================================")
     print("This demo walks through the key components of the analysis.")
     input("Press Enter to start...")
@@ -36,8 +41,16 @@ def main():
     tickers = get_sp500_tickers()
     print(f"Universe: Top {len(tickers)} S&P 500 Constituents")
     print("Period: 2004-2024 (20 Years)")
-    print("Loading data...")
-    data = download_data(tickers)
+    
+    # Load from local CSV in results/ if available
+    data_path = os.path.join(DATA_DIR, "sp500_data.csv")
+    if os.path.exists(data_path):
+        print(f"Loading cached data from {data_path}...")
+        data = pd.read_csv(data_path, index_col=0, parse_dates=True)
+    else:
+        print("Cached data not found. Downloading...")
+        data = download_data(tickers)
+        
     print(f"Data Shape: {data.shape} (Rows, Cols)")
     input("Press Enter to run simulations...")
 
