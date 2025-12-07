@@ -5,7 +5,8 @@ from scenarios import apply_income_withdrawal, apply_charitable_giving
 import visualization
 import matplotlib.pyplot as plt
 
-from config import INITIAL_CASH
+from config import INITIAL_CASH, DATA_DIR
+import os
 
 def main():
     print("Starting Tax-Loss Harvesting Backtesting Engine...")
@@ -55,17 +56,11 @@ def main():
             history[scen_name][strat_name] = hist_series
             
             # Calculate CAGR
-            years = 10
+            years = 20 # Updated to 20 years as per new config
             final_val = metrics['Final Wealth']
             cagr = (final_val / INITIAL_CASH) ** (1/years) - 1
             
-            # Calculate Net Tax Impact (Tax Paid - Tax Credits?)
-            # Or simply Tax Paid vs Tax Savings. 
-            # Group 7 defines Net Tax Impact likely as value added from tax strategy.
-            # For simplicity, we'll define it as: (Final Wealth - Baseline Final Wealth) / Initial Cash
-            # But to be precise, let's stick to the metrics we have: Total Taxes Paid.
-            # We will add a computed field "Net Tax Impact" as (Tax Savings from Losses - Taxes Paid).
-            # Tax Savings = Realized Losses * 0.20
+            # Calculate Net Tax Impact
             tax_savings = metrics['Total Realized Losses'] * 0.20
             net_tax_impact = tax_savings - metrics['Total Taxes Paid']
 
@@ -94,8 +89,9 @@ def main():
     print(df_results.to_string(index=False))
     
     # Save to CSV
-    df_results.to_csv("backtest_results.csv", index=False)
-    print("\nResults saved to backtest_results.csv")
+    csv_path = os.path.join(DATA_DIR, "backtest_results.csv")
+    df_results.to_csv(csv_path, index=False)
+    print(f"\nResults saved to {csv_path}")
 
     # 5. Visualizations
     print("\nGenerating Visualizations...")

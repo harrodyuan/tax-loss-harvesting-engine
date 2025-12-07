@@ -1,7 +1,9 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
+import os
 from typing import Dict, List
+from config import IMAGE_DIR
 
 def plot_wealth_curves(results_history: Dict[str, pd.Series], title: str = "Portfolio Wealth Over Time"):
     """
@@ -22,8 +24,9 @@ def plot_wealth_curves(results_history: Dict[str, pd.Series], title: str = "Port
     
     # Save plot
     filename = f"wealth_curves_{title.replace(' ', '_').lower()}.png"
-    plt.savefig(filename)
-    print(f"Saved plot to {filename}")
+    filepath = os.path.join(IMAGE_DIR, filename)
+    plt.savefig(filepath)
+    print(f"Saved plot to {filepath}")
     plt.close()
 
 def plot_drawdowns(results_history: Dict[str, pd.Series], title: str = "Portfolio Drawdowns"):
@@ -46,8 +49,9 @@ def plot_drawdowns(results_history: Dict[str, pd.Series], title: str = "Portfoli
     plt.tight_layout()
     
     filename = f"drawdowns_{title.replace(' ', '_').lower()}.png"
-    plt.savefig(filename)
-    print(f"Saved plot to {filename}")
+    filepath = os.path.join(IMAGE_DIR, filename)
+    plt.savefig(filepath)
+    print(f"Saved plot to {filepath}")
     plt.close()
 
 def plot_metrics_comparison(df_results: pd.DataFrame):
@@ -67,8 +71,9 @@ def plot_metrics_comparison(df_results: pd.DataFrame):
         plt.tight_layout()
         
         filename = f"comparison_{metric.replace(' ', '_').lower()}.png"
-        plt.savefig(filename)
-        print(f"Saved plot to {filename}")
+        filepath = os.path.join(IMAGE_DIR, filename)
+        plt.savefig(filepath)
+        print(f"Saved plot to {filepath}")
         plt.close()
 
 def plot_tax_efficiency(df_results: pd.DataFrame):
@@ -82,7 +87,8 @@ def plot_tax_efficiency(df_results: pd.DataFrame):
     plt.tight_layout()
     
     filename = "tax_efficiency_frontier.png"
-    plt.savefig(filename)
-    print(f"Saved plot to {filename}")
+    filepath = os.path.join(IMAGE_DIR, filename)
+    plt.savefig(filepath)
+    print(f"Saved plot to {filepath}")
     plt.close()
 

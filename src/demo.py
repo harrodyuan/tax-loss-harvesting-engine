@@ -5,13 +5,15 @@ from data_loader import get_sp500_tickers, download_data
 from strategies import BacktestEngine
 from scenarios import apply_income_withdrawal, apply_charitable_giving
 import os
+from config import IMAGE_DIR
 
 def show_image(title, filename):
     """Helper to display an image in the demo flow."""
     print(f"\n[DEMO] Displaying: {title}")
-    if os.path.exists(filename):
+    filepath = os.path.join(IMAGE_DIR, filename)
+    if os.path.exists(filepath):
         try:
-            img = mpimg.imread(filename)
+            img = mpimg.imread(filepath)
             plt.figure(figsize=(12, 8))
             plt.imshow(img)
             plt.axis('off')
@@ -20,7 +22,7 @@ def show_image(title, filename):
         except Exception as e:
             print(f"Could not open image: {e}")
     else:
-        print(f"File not found: {filename}")
+        print(f"File not found: {filepath}")
 
 def main():
     print("===================================================")
@@ -33,7 +35,7 @@ def main():
     print("\n[1] DATA & UNIVERSE")
     tickers = get_sp500_tickers()
     print(f"Universe: Top {len(tickers)} S&P 500 Constituents")
-    print("Period: 2014-2024")
+    print("Period: 2004-2024 (20 Years)")
     print("Loading data...")
     data = download_data(tickers)
     print(f"Data Shape: {data.shape} (Rows, Cols)")
@@ -71,7 +73,7 @@ def main():
     
     print("\n[4] KEY CONCLUSION")
     print("The 'With Wash' strategy underperforms the Baseline due to 'Cash Drag'.")
-    print("In a strong bull market (2014-2024), missing 30 days of returns is costlier than the tax benefit.")
+    print("In a strong bull market (2004-2024), missing 30 days of returns is costlier than the tax benefit.")
     
     print("\nDemo Complete.")
 

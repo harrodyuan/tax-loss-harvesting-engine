@@ -2,9 +2,9 @@ import yfinance as yf
 import pandas as pd
 import os
 from typing import List
-from config import START_DATE, END_DATE
+from config import START_DATE, END_DATE, DATA_DIR
 
-DATA_FILE = "sp500_data.csv"
+DATA_FILE = os.path.join(DATA_DIR, "sp500_data.csv")
 
 def get_sp500_tickers() -> List[str]:
     """Returns list of top 50 S&P 500 tickers."""
