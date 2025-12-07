@@ -17,17 +17,14 @@
 
 This project simulates and evaluates the performance of **Tax-Loss Harvesting (TLH)** strategies on a Direct Indexing portfolio tracking the S&P 500 (Top 50 constituents) over the last 10 years (2014-2024).
 
-##  Key Findings (2014-2024)
+## Findings (2014-2024)
 
 ![Wealth Curve](images/wealth_curves_wealth_over_time_-_income_withdrawal.png)
 
-1.  **"No Wash" Strategy Wins**: The theoretical best performer was the **Greedy (No Wash)** strategy (**$28.2M** vs $25.9M Baseline). By ignoring the 30-day lockout period, it captured tax credits without missing out on market rebounds ("Cash Drag").
-2.  **Cash Drag Hurts**: Strategies that strictly obeyed wash sale rules (Greedy With Wash, Optimized) **underperformed** the simple Buy & Hold baseline (**$25.0M** vs $25.9M). In a strong bull market like 2014-2024, the opportunity cost of sitting in cash for 30 days outweighed the tax benefits of harvesting.
-3.  **Charity is Powerful**: The "Charitable Giving" scenario (annual contribution + terminal donation) resulted in the highest final wealth (**$83.3M**) because it avoids the massive liquidation tax at the end of the investment horizon.
+1.  The theoretical best performer was the **Greedy (No Wash)** strategy (**$28.2M** vs $25.9M Baseline). By ignoring the 30-day lockout period, it captured tax credits without missing out on market rebounds ("Cash Drag").
+2.  Strategies that strictly obeyed wash sale rules (Greedy With Wash, Optimized) **underperformed** the simple Buy & Hold baseline (**$25.0M** vs $25.9M). In a strong bull market like 2014-2024, the opportunity cost of sitting in cash for 30 days outweighed the tax benefits of harvesting.
 
-##  Terminal Demo
-
-Experience the simulation in your own terminal with our interactive cyberpunk demo script.
+## Demo
 
 ```bash
 python demo.py
@@ -47,7 +44,7 @@ python demo.py
  > WARN: 'WITH WASH' SUFFERS CASH DRAG PENALTY.
 ```
 
-##  Methodology
+##  method
 
 *   **Universe**: Top 50 S&P 500 stocks.
 *   **Period**: Jan 1, 2014 - Jan 1, 2024 (10 Years).
@@ -55,7 +52,8 @@ python demo.py
 *   **Tax Rate**: Flat 20%.
 *   **Reinvestment**: Realized losses generate an immediate tax credit (`Loss * 0.20`) which is reinvested into the portfolio.
 
-### Strategies Tested
+### strategies
+
 1.  **Baseline**: Buy & Hold (Monthly Rebalancing). No harvesting.
 2.  **Greedy (No Wash)**: Sells losers and immediately buys them back. Captures tax alpha but violates wash sale rules.
 3.  **Greedy (With Wash)**: Sells losers and holds cash for 30 days before buying back. Compliant but suffers from cash drag.
