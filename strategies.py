@@ -199,10 +199,20 @@ class BacktestEngine:
                 # 1. Scenarios
                 if scenario_func:
                     scenario_func(self.portfolio, current_prices, date.year)
-                    if scenario_func.__name__ == 'apply_charitable_giving' and i == len(dates) - 1:
-                        scenarios.liquidate_for_donation(self.portfolio, current_prices)
+                    
+                    # Handle TERMINAL Events (Year 20)
+                    if i == len(dates) - 1:
+                        if scenario_func.__name__ == 'apply_charitable_giving':
+                            scenarios.liquidate_for_donation(self.portfolio, current_prices)
+                        elif scenario_func.__name__ == 'apply_income_withdrawal':
+                            # FORCE LIQUIDATION for Income Scenario
+                            # Sell everything, realize ALL gains/losses
+                            # Calculate tax on final liquidation
+                            self.portfolio.hifo_liquidation_all(current_prices) # Need to implement or simulate
                 
                 # 2. Tax Calculation
+                # In current logic, realized_gains/losses accumulate during the year.
+                # At year end, we net them.
                 net_pl = self.portfolio.realized_gains - self.portfolio.realized_losses - loss_carryforward
                 
                 # Update cumulative losses

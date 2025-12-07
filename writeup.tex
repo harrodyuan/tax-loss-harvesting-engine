@@ -24,7 +24,7 @@
 \maketitle
 
 \begin{abstract}
-This paper investigates the efficacy of Tax-Loss Harvesting (TLH) strategies applied to a Direct Indexing portfolio tracking the S\&P 500 over the period 2014-2024. We compare active harvesting strategies against a passive benchmark under specific wash-sale constraints. Our results demonstrate that while harvesting generates theoretical alpha, the ``cash drag'' mandated by the IRS Wash Sale Rule significantly erodes these gains in a strong bull market. We further analyze the impact of different cash-flow scenarios, finding that a charitable giving liquidation strategy maximizes final wealth retention.
+This paper investigates the efficacy of Tax-Loss Harvesting (TLH) strategies applied to a Direct Indexing portfolio tracking the S\&P 500 over the period 2004-2024. We compare active harvesting strategies against a passive benchmark under specific wash-sale constraints. Our results demonstrate that while harvesting generates theoretical alpha, the ``cash drag'' mandated by the IRS Wash Sale Rule significantly erodes these gains in a strong bull market. We further analyze the impact of different cash-flow scenarios, finding that a charitable giving liquidation strategy maximizes final wealth retention.
 \end{abstract}
 
 \section{Introduction}
@@ -35,7 +35,7 @@ In a taxable portfolio, taxes are paid only on the net ``realized'' gains/losses
 
 Taxation creates several challenges for portfolio construction. Capital gains and losses are only taxable upon realization. This creates an incentive to build a strategy that defer the sale of appreciated assets while strategically recognizing losses. To prevent massive selloffs due to tax harvesting, regulatory constraints such as the wash-sale rule are put in place---the rule restricts the investor's ability to claim tax deductions on realized losses when the same security is repurchased within a short window, usually 30 days.
 
-In this project, we study tax-efficient strategies to track a broad equity market index over a long investment horizon. We consider a 10-year horizon and begin with an all-cash endowment of \$10 million, rebalancing the portfolio on a regular schedule. We compare several tax-aware strategies against a baseline strategy that perfectly replicates the benchmark index using standard performance metrics.
+In this project, we study tax-efficient strategies to track a broad equity market index over a long investment horizon. We consider a 20-year horizon (2004-2024) and begin with an all-cash endowment of \$10 million, rebalancing the portfolio on a regular schedule. We compare several tax-aware strategies against a baseline strategy that perfectly replicates the benchmark index using standard performance metrics.
 
 \section{Methodology and Mathematical Formulation}
 
@@ -76,9 +76,9 @@ Subject to:
 \end{equation}
 This framework minimizes tracking error relative to the benchmark while strictly adhering to wash-sale constraints (zero weight on restricted assets). Instead of holding cash, the optimizer attempts to reallocate capital to correlated substitutes within the allowable universe.
 
-\section{Empirical Results (2014-2024)}
+\section{Empirical Results (2004-2024)}
 
-The simulation covered a decade characterized by a strong equity bull market. The results for the \textbf{Income Withdrawal Scenario} (5\% annual withdrawal) are summarized below:
+The simulation covered a 20-year period including major market events like the 2008 GFC, 2020 COVID crash, and 2022 bear market. The results for the \textbf{Income Withdrawal Scenario} (5\% annual withdrawal, liquidation at Year 20) are summarized below:
 
 \begin{table}[H]
 \centering
@@ -86,10 +86,10 @@ The simulation covered a decade characterized by a strong equity bull market. Th
 \toprule
 \textbf{Strategy} & \textbf{Final Wealth} & \textbf{Total Tax Paid} & \textbf{Realized Losses} \\
 \midrule
-Baseline (Passive) & \$29,779,543 & \$2,789,422 & \$1,769,279 \\
-\textbf{Greedy (No Wash)} & \textbf{\$32,570,308} & \$2,675,905 & \$6,439,701 \\
-Greedy (With Wash) & \$25,184,912 & \$4,417,664 & \$22,607,123 \\
-Optimized & \$25,700,917 & \$4,378,182 & \$22,543,163 \\
+Baseline (Passive) & \$25,962,240 & \$6,606,725 & \$1,854,728 \\
+\textbf{Greedy (No Wash)} & \textbf{\$28,227,764} & \$7,018,448 & \$6,440,621 \\
+Greedy (With Wash) & \$25,059,143 & \$5,075,859 & \$22,558,950 \\
+Optimized & \$24,865,939 & \$4,970,652 & \$22,749,523 \\
 \bottomrule
 \end{tabular}
 \caption{Comparison of Final Wealth and Tax Metrics (Income Scenario)}
@@ -97,10 +97,10 @@ Optimized & \$25,700,917 & \$4,378,182 & \$22,543,163 \\
 \end{table}
 
 \subsection{Analysis of Cash Drag}
-The most striking finding is the underperformance of the compliant strategies. The \textbf{Greedy (With Wash)} strategy underperformed the baseline by over \$4.5M. In a rising market, the opportunity cost of being out of the market (Cash Drag) exceeds the 20\% value of the harvested tax credit. The ``No Wash'' strategy's outperformance confirms that the \textit{harvesting} itself is valuable, but the \textit{regulatory friction} destroys that value in this specific universe and market regime.
+The most striking finding is the underperformance of the compliant strategies. The \textbf{Greedy (With Wash)} strategy underperformed the baseline by almost \$1M. In a rising market (over 20 years), the opportunity cost of being out of the market (Cash Drag) exceeds the 20\% value of the harvested tax credit. The ``No Wash'' strategy's outperformance confirms that the \textit{harvesting} itself is valuable, but the \textit{regulatory friction} destroys that value in this specific universe and market regime.
 
 \subsection{Charitable Giving Scenario}
-We also tested a ``Charitable Giving'' scenario where the investor contributes \$1M annually and donates the portfolio at Year 10 (avoiding terminal liquidation tax).
+We also tested a ``Charitable Giving'' scenario where the investor contributes \$1M annually and donates the portfolio at Year 20 (avoiding terminal liquidation tax).
 \begin{itemize}
     \item \textbf{Baseline Final Wealth:} \$75,963,882
     \item \textbf{No Wash Final Wealth:} \$83,256,160
@@ -112,7 +112,7 @@ We also tested a ``Charitable Giving'' scenario where the investor contributes \
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{wealth_curves_wealth_over_time_-_income_withdrawal.png}
-    \caption{Wealth Accumulation over 10 Years (Income Scenario)}
+    \caption{Wealth Accumulation over 20 Years (Income Scenario)}
     \label{fig:wealth}
 \end{figure}
 
@@ -138,6 +138,12 @@ We also tested a ``Charitable Giving'' scenario where the investor contributes \
 \end{figure}
 
 \section{Conclusion}
+
+Our analysis suggests that for a Direct Indexing portfolio of 50 stocks, standard Tax-Loss Harvesting strategies may be detrimental during strong bull markets due to wash-sale constraints. The ``Cash Drag'' of waiting 30 days or the tracking error of using imperfect substitutes can outweigh the tax benefits.
+
+Future work should explore expanding the universe to 500+ stocks or using ETFs as substitutes to minimize the time spent in uninvested cash, thereby capturing the tax alpha demonstrated by the ``No Wash'' theoretical model.
+
+\section{Limitations}
 
 We made several simplifying assumptions:
 \begin{enumerate}

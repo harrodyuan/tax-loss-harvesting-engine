@@ -131,6 +131,30 @@ class Portfolio:
 
         return sold_quantities
     
+    def hifo_liquidation_all(self, current_prices: Dict[str, float]):
+        """
+        Liquidates entire portfolio at current prices.
+        Updates realized gains/losses.
+        """
+        for ticker, lots in list(self.holdings.items()):
+            current_price = current_prices.get(ticker)
+            if not current_price:
+                continue
+            
+            # Sell all lots
+            for lot in lots:
+                proceeds = lot.shares * current_price
+                cost = lot.shares * lot.cost_basis
+                gl = proceeds - cost
+                
+                self.cash += proceeds
+                if gl > 0:
+                    self.realized_gains += gl
+                else:
+                    self.realized_losses += abs(gl)
+            
+        self.holdings = {}
+
     def get_total_value(self, current_prices: Dict[str, float]) -> float:
         value = self.cash
         for ticker, lots in self.holdings.items():
