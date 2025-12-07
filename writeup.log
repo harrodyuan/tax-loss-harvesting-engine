@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  7 DEC 2025 11:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  7 DEC 2025 11:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -422,21 +422,21 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.105     \item \textbf
+l.110     \item \textbf
                        {Baseline Final Wealth:} \$75,963,882]
-<wealth_curves_wealth_over_time_-_income_withdrawal.png, id=85, 867.24pt x 433.
+<wealth_curves_wealth_over_time_-_income_withdrawal.png, id=90, 867.24pt x 433.
 62pt>
 File: wealth_curves_wealth_over_time_-_income_withdrawal.png Graphic file (type
  png)
 <use wealth_curves_wealth_over_time_-_income_withdrawal.png>
 Package pdftex.def Info: wealth_curves_wealth_over_time_-_income_withdrawal.png
-  used on input line 114.
+  used on input line 119.
 (pdftex.def)             Requested size: 407.66833pt x 203.8345pt.
-<drawdowns_drawdowns_-_income_withdrawal.png, id=87, 867.24pt x 433.62pt>
+<drawdowns_drawdowns_-_income_withdrawal.png, id=92, 867.24pt x 433.62pt>
 File: drawdowns_drawdowns_-_income_withdrawal.png Graphic file (type png)
 <use drawdowns_drawdowns_-_income_withdrawal.png>
 Package pdftex.def Info: drawdowns_drawdowns_-_income_withdrawal.png  used on i
-nput line 121.
+nput line 126.
 (pdftex.def)             Requested size: 407.66833pt x 203.8345pt.
 
 
@@ -445,17 +445,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.125 
+l.130 
        <./wealth_curves_wealth_over_time_-_income_withdrawal.png>]
-<comparison_cagr.png, id=94, 722.7pt x 433.62pt>
+<comparison_cagr.png, id=99, 722.7pt x 433.62pt>
 File: comparison_cagr.png Graphic file (type png)
 <use comparison_cagr.png>
-Package pdftex.def Info: comparison_cagr.png  used on input line 128.
+Package pdftex.def Info: comparison_cagr.png  used on input line 133.
 (pdftex.def)             Requested size: 407.66833pt x 244.59877pt.
-<comparison_net_tax_impact.png, id=95, 722.7pt x 433.62pt>
+<comparison_net_tax_impact.png, id=100, 722.7pt x 433.62pt>
 File: comparison_net_tax_impact.png Graphic file (type png)
 <use comparison_net_tax_impact.png>
-Package pdftex.def Info: comparison_net_tax_impact.png  used on input line 135.
+Package pdftex.def Info: comparison_net_tax_impact.png  used on input line 140.
 
 (pdftex.def)             Requested size: 407.66833pt x 244.59877pt.
 
@@ -465,16 +465,16 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.139 
+l.144 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.139 
+l.144 
        <./drawdowns_drawdowns_-_income_withdrawal.png> <./comparison_cagr.png>]
 
-Overfull \hbox (3.08269pt too wide) in paragraph at lines 152--153
+Overfull \hbox (3.08269pt too wide) in paragraph at lines 157--158
 []\OT1/cmr/bx/n/12 Transaction Costs: \OT1/cmr/m/n/12 We as-sumed zero trans-ac
 -tion costs, which fa-vors high-turnover
  []
@@ -486,7 +486,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.158     \item C
+l.163     \item C
                  haudhuri, S., Burnham, T., \& Lo, A. (2020). \textit{An Emp...
  <./comparison_net_tax_impact.png>]
 
@@ -495,24 +495,14 @@ l.158     \item C
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `writeup.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `writeup.out':
-(rerunfilecheck)             Before: A2CEC598E547A324429A547F74BCFF3A;2306
-(rerunfilecheck)             After:  FD37A679BDFA78BF731471097FF7B32C;2405.
+Package rerunfilecheck Info: File `writeup.out' has not changed.
+(rerunfilecheck)             Checksum: FD37A679BDFA78BF731471097FF7B32C;2405.
  ) 
 Here is how much of TeX's memory you used:
- 10186 strings out of 474662
- 157549 string characters out of 5751110
- 566182 words of memory out of 5000000
- 33078 multiletter control sequences out of 15000+600000
+ 10187 strings out of 474662
+ 157560 string characters out of 5751110
+ 567182 words of memory out of 5000000
+ 33079 multiletter control sequences out of 15000+600000
  567239 words of font info for 65 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  75i,8n,79p,641b,530s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -530,10 +520,10 @@ sic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/202
 ve/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/loc
 al/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on writeup.pdf (7 pages, 493235 bytes).
+Output written on writeup.pdf (7 pages, 496019 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
- 147 compressed objects within 2 object streams
+ 195 PDF objects out of 1000 (max. 8388607)
+ 151 compressed objects within 2 object streams
  38 named destinations out of 1000 (max. 500000)
- 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 125 words of extra memory for PDF output out of 10000 (max. 10000000)
 
