@@ -13,11 +13,11 @@
 
 # Tax is All You Need
 
-> **"In a strong bull market, Cash Drag is the mind-killer."**
+> **"In a strong bull market, Cash Drag is the killer."**
 
 This project simulates and evaluates the performance of **Tax-Loss Harvesting (TLH)** strategies on a Direct Indexing portfolio tracking the S&P 500 (Top 50 constituents) over the last 20 years (2004-2024).
 
-## ⚡ Key Findings (2004-2024)
+##  Key Findings (2004-2024)
 
 ![Wealth Curve](images/wealth_curves_wealth_over_time_-_income_withdrawal.png)
 
@@ -25,7 +25,7 @@ This project simulates and evaluates the performance of **Tax-Loss Harvesting (T
 2.  **Cash Drag Hurts**: Strategies that strictly obeyed wash sale rules (Greedy With Wash, Optimized) **underperformed** the simple Buy & Hold baseline (**$25.0M** vs $25.9M). In a strong bull market like 2004-2024, the opportunity cost of sitting in cash for 30 days outweighed the tax benefits of harvesting.
 3.  **Charity is Powerful**: The "Charitable Giving" scenario (annual contribution + terminal donation) resulted in the highest final wealth (**$83.3M**) because it avoids the massive liquidation tax at the end of the investment horizon.
 
-## 💻 Terminal Demo
+##  Terminal Demo
 
 Experience the simulation in your own terminal with our interactive cyberpunk demo script.
 
@@ -47,10 +47,10 @@ python demo.py
  > WARN: 'WITH WASH' SUFFERS CASH DRAG PENALTY.
 ```
 
-## ⚙️ Methodology
+##  Methodology
 
 *   **Universe**: Top 50 S&P 500 stocks.
-*   **Period**: Jan 1, 2004 - Jan 1, 2024 (20 Years).
+*   **Period**: Jan 1, 2014 - Jan 1, 2024 (10 Years).
 *   **Initial Capital**: $10,000,000.
 *   **Tax Rate**: Flat 20%.
 *   **Reinvestment**: Realized losses generate an immediate tax credit (`Loss * 0.20`) which is reinvested into the portfolio.
@@ -60,16 +60,3 @@ python demo.py
 2.  **Greedy (No Wash)**: Sells losers and immediately buys them back. Captures tax alpha but violates wash sale rules.
 3.  **Greedy (With Wash)**: Sells losers and holds cash for 30 days before buying back. Compliant but suffers from cash drag.
 4.  **Optimized**: Uses convex optimization (`cvxpy`) to track the index while avoiding restricted stocks.
-
-## 🚀 How to Run
-
-1.  Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-2.  Run the simulation:
-    ```bash
-    python src/main.py
-    ```
-    This will download the latest data, run all 8 simulations, and generate the plots and CSV results found in this repo.
-
