@@ -4,7 +4,7 @@
   / / / _  /  \/  /_/ /   / /|_/ / _/        
  /_/ /_/|_/_/\_/\___\   /_/  /_/___/        
                                              
-  TAX-LOSS HARVESTING ENGINE v2.0            
+  TAX-LOSS HARVESTING ENGINE        
   [SYSTEM: ONLINE] [MODE: SIMULATION]        
 ```
 
